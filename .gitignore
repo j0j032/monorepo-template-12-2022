@@ -1,3 +1,4 @@
 # Project exclude paths
 /node_modules/
 /packages/ui/node_modules/
+/.idea/
