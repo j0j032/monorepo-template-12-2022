@@ -1,12 +1,12 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Header } from "./Header";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Header } from './Header';
 
 const meta: Meta<typeof Header> = {
-    title: "Organisms/Header",
+    title: 'Organisms/Header',
     component: Header,
-    tags: ["autodocs"],
+    tags: ['autodocs'],
     parameters: {
-        layout: "fullscreen",
+        layout: 'fullscreen',
     },
 };
 
@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 export const LoggedIn: Story = {
     args: {
         user: {
-            name: "Jane Doe",
+            name: 'Jane Doe',
         },
     },
 };

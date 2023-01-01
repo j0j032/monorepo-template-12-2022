@@ -1,11 +1,11 @@
-import React from "react";
-import styles from "./button.module.scss";
+import React from 'react';
+import styles from './button.module.scss';
 
 interface ButtonProps {
     primary?: boolean;
     backgroundColor?: string;
     color?: string;
-    size?: "small" | "medium" | "large";
+    size?: 'small' | 'medium' | 'large';
     label: string;
     onClick?: () => void;
 }
@@ -15,7 +15,7 @@ interface ButtonProps {
  */
 export const Button = ({
     primary = false,
-    size = "medium",
+    size = 'medium',
     backgroundColor,
     color,
     label,
@@ -25,7 +25,7 @@ export const Button = ({
     return (
         <button
             type="button"
-            className={[styles.button, styles[size], mode].join(" ")}
+            className={[styles.button, styles[size], mode].join(' ')}
             style={{ backgroundColor, color }}
             {...props}
         >
