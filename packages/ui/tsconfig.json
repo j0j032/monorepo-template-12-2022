@@ -1,5 +1,9 @@
 {
   "extends": "../tools/tsconfig.base.json",
-  "include": ["src"],
+  "include": [
+    "src",
+    "vite.config.ts",
+  ],
+  "files": ["./tests.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
