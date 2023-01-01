@@ -10,7 +10,6 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "prettier": "tools/prettier.config.js",
-  "typescript": "tools/tsconfig.json",
   "dependencies": {
     "functions": "workspace:*",
     "react": "^18.2.0",
