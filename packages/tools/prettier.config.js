@@ -1,4 +1,22 @@
 module.exports = {
+	printWidth: 80,
 	tabWidth: 4,
+	useTabs: false,
+	semi: true,
+	singleQuote: true,
+	quoteProps: "as-needed",
+	jsxSingleQuote: false,
+	trailingComma: "es5",
 	bracketSpacing: true,
-}
+	jsxBracketSameLine: false,
+	arrowParens: "always",
+	rangeStart: 0,
+	rangeEnd: Infinity,
+	parser: "typescript",
+	requirePragma: false,
+	insertPragma: false,
+	proseWrap: "preserve",
+	htmlWhitespaceSensitivity: "css",
+	endOfLine: "lf",
+	overrides: [],
+};
