@@ -4,6 +4,5 @@
     "src",
     "vite.config.ts",
   ],
-  "files": ["./tests.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

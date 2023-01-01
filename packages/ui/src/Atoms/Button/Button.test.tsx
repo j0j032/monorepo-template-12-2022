@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
+
 import { Button } from './Button';
 import styles from './button.module.scss';
 
@@ -9,11 +10,13 @@ describe('Button', () => {
   it('should render the given label',() => {
     const { getByText } = render(<Button label="Click me" />);
     const button = getByText('Click me');
+    // @ts-ignore
     expect(button).toBeInTheDocument();
   });
 
   it('should have primary style if primary prop is set', () => {
     const { container }  = render(<Button primary={true} label="Click me" />);
+    // @ts-ignore
     expect(container.firstChild).toHaveClass(styles.primary);
   });
 
@@ -21,6 +24,7 @@ describe('Button', () => {
     const { container } = render(
       <Button backgroundColor="#f00" color="#fff" label="Click me" />
     );
+    // @ts-ignore
     expect(container.firstChild).toHaveStyle({
       backgroundColor: '#f00',
       color: '#fff',
@@ -29,11 +33,13 @@ describe('Button', () => {
 
   it('should have medium size by default', () => {
     const { container } = render(<Button label="Click me" />);
+    // @ts-ignore
     expect(container.firstChild).toHaveClass(styles.medium);
   });
 
   it('should use given size prop', () => {
     const { container } = render(<Button size="large" label="Click me" />);
+    // @ts-ignore
     expect(container.firstChild).toHaveClass(styles.large);
   });
 
